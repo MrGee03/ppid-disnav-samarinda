@@ -6,21 +6,23 @@
   <title>PPID Disnav Samarinda</title>
   <meta name="description" content="PPID – Distrik Navigasi Tipe A Kelas I Samarinda" />
   <!-- Tailwind Play CDN -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>body { font-family: 'Orbitron', sans-serif; }</style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: { brand: { DEFAULT: '#0d47a1', soft: '#1e40af' } }
+          colors: { brand: { DEFAULT: '#00c6ff', soft: '#0072ff' } }
         }
       }
     }
   </script>
 </head>
-<body class="text-slate-900 bg-white">
+<body class="bg-slate-900 text-slate-100">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white px-3 py-2 rounded">Lewati ke konten</a>
 
-  <header class="sticky top-0 z-10 bg-brand text-white">
+  <header class="sticky top-0 z-10 bg-gradient-to-r from-brand to-brand-soft text-white">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center gap-4 min-h-[64px]">
         <div class="flex items-center gap-3">
@@ -111,19 +113,19 @@
     </section>
 
     <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 my-8">
-      <article class="bg-slate-50 rounded-2xl p-5 shadow-sm">
+      <article class="bg-slate-800 rounded-2xl p-5 shadow-lg">
         <h2 class="text-lg font-semibold">Profil PPID</h2>
-        <p class="mt-1 text-slate-600">Pelajari tugas, fungsi, visi‑misi, struktur organisasi, serta dasar regulasi.</p>
+        <p class="mt-1 text-slate-300">Pelajari tugas, fungsi, visi‑misi, struktur organisasi, serta dasar regulasi.</p>
         <p class="mt-3"><a class="text-brand font-medium" href="profil/index.html">Lihat Profil →</a></p>
       </article>
-      <article class="bg-slate-50 rounded-2xl p-5 shadow-sm">
+      <article class="bg-slate-800 rounded-2xl p-5 shadow-lg">
         <h2 class="text-lg font-semibold">Informasi Publik</h2>
-        <p class="mt-1 text-slate-600">Akses informasi Berkala, Serta Merta, Setiap Saat, dan pengecualian informasi.</p>
+        <p class="mt-1 text-slate-300">Akses informasi Berkala, Serta Merta, Setiap Saat, dan pengecualian informasi.</p>
         <p class="mt-3"><a class="text-brand font-medium" href="informasi/index.html">Jelajahi Informasi →</a></p>
       </article>
-      <article class="bg-slate-50 rounded-2xl p-5 shadow-sm">
+      <article class="bg-slate-800 rounded-2xl p-5 shadow-lg">
         <h2 class="text-lg font-semibold">Prosedur</h2>
-        <p class="mt-1 text-slate-600">Alur permohonan informasi, waktu layanan, biaya (jika ada), dan kanal layanan.</p>
+        <p class="mt-1 text-slate-300">Alur permohonan informasi, waktu layanan, biaya (jika ada), dan kanal layanan.</p>
         <p class="mt-3"><a class="text-brand font-medium" href="prosedur/index.html">Lihat Prosedur →</a></p>
       </article>
     </section>
@@ -134,7 +136,7 @@
     </section>
   </main>
 
-  <footer class="bg-[#0b3b86] text-blue-50 mt-10">
+  <footer class="bg-gradient-to-r from-brand-soft to-brand text-blue-50 mt-10">
     <div class="max-w-6xl mx-auto px-4 py-6 text-sm">
       <p>© 2025 Distrik Navigasi Tipe A Kelas I Samarinda • We Guide You at Sea</p>
       <address class="not-italic">Alamat kantor, Samarinda • Email: humas@disnavsamarinda.go.id • Tel: (000) 000‑000</address>
