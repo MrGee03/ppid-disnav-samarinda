@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Profil PPID",
+    "url": "profil/profil.html",
+    "content": "Gambaran umum PPID Disnav Samarinda."
+  },
+  {
+    "title": "Tugas dan Fungsi PPID",
+    "url": "profil/tugas-fungsi.html",
+    "content": "Rincian tugas, kewenangan, dan tanggung jawab PPID."
+  },
+  {
+    "title": "Visi dan Misi",
+    "url": "profil/visi-misi.html",
+    "content": "Arah dan tujuan layanan informasi publik yang transparan."
+  },
+  {
+    "title": "Struktur Organisasi",
+    "url": "profil/struktur.html",
+    "content": "Bagan dan uraian jabatan PPID beserta kontak layanan."
+  },
+  {
+    "title": "Regulasi",
+    "url": "profil/regulasi.html",
+    "content": "Peraturan perundangan terkait keterbukaan informasi publik."
+  },
+  {
+    "title": "Kontak",
+    "url": "profil/kontak.html",
+    "content": "Alamat, email, telepon, jam layanan, dan peta lokasi."
+  },
+  {
+    "title": "Informasi Berkala",
+    "url": "informasi/berkala.html",
+    "content": "Informasi yang wajib diumumkan secara berkala."
+  },
+  {
+    "title": "Informasi Serta Merta",
+    "url": "informasi/serta-merta.html",
+    "content": "Informasi terkait ancaman hajat hidup orang banyak dan ketertiban umum."
+  },
+  {
+    "title": "Informasi Setiap Saat",
+    "url": "informasi/setiap-saat.html",
+    "content": "Informasi yang wajib tersedia setiap saat dan dapat diakses publik."
+  },
+  {
+    "title": "Informasi Dikecualikan",
+    "url": "informasi/dikecualikan.html",
+    "content": "Informasi yang dikecualikan sesuai peraturan perundangan."
+  },
+  {
+    "title": "Prosedur Permohonan Informasi",
+    "url": "prosedur/index.html",
+    "content": "Alur, format permohonan, jangka waktu, biaya, dan pengajuan keberatan."
+  }
+]

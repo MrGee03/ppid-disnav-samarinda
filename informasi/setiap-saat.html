@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Setiap Saat</title>
+  <meta name="description" content="PPID – Distrik Navigasi Tipe A Kelas I Samarinda" />
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { DEFAULT: '#0d47a1', soft: '#1e40af' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="text-slate-900 bg-white">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white px-3 py-2 rounded">Lewati ke konten</a>
+
+  <header class="sticky top-0 z-10 bg-brand text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-4 min-h-[64px]">
+        <div class="flex items-center gap-3">
+          <img src="../assets/img/logo-disnav.png" alt="Logo Distrik Navigasi Samarinda" class="w-10 h-10 object-contain" />
+          <span class="font-bold">PPID Disnav Samarinda</span>
+        </div>
+
+        <button id="nav-toggle" class="ml-auto inline-flex items-center justify-center border border-white/70 rounded px-3 py-1.5 md:hidden" aria-controls="menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <span class="ml-2">Menu</span>
+        </button>
+
+        <nav class="hidden md:block ml-auto" aria-label="Navigasi utama">
+          <ul class="flex items-center gap-3" id="menu">
+            <li><a class="inline-block px-3 py-2 rounded hover:bg-white/15" href="../index.html">Beranda</a></li>
+            <li class="relative group">
+              <a class="inline-block px-3 py-2 rounded hover:bg-white/15" href="../profil/index.html">Profil PPID</a>
+              <ul class="absolute left-0 mt-1 w-64 bg-white text-slate-900 rounded-lg shadow-xl p-2 hidden group-hover:block">
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/profil.html">Profil PPID</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/tugas-fungsi.html">Tugas &amp; Fungsi</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/visi-misi.html">Visi &amp; Misi</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/struktur.html">Struktur Organisasi</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/regulasi.html">Regulasi</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/kontak.html">Kontak</a></li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a class="inline-block px-3 py-2 rounded hover:bg-white/15" href="../informasi/index.html">Informasi Publik</a>
+              <ul class="absolute left-0 mt-1 w-72 bg-white text-slate-900 rounded-lg shadow-xl p-2 hidden group-hover:block">
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/berkala.html">Informasi Berkala</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/serta-merta.html">Informasi Serta Merta</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/setiap-saat.html">Informasi Setiap Saat</a></li>
+                <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/dikecualikan.html">Informasi Dikecualikan</a></li>
+              </ul>
+            </li>
+            <li><a class="inline-block px-3 py-2 rounded hover:bg-white/15" href="../prosedur/index.html">Prosedur</a></li>
+          </ul>
+        </nav>
+
+        <form class="hidden md:block" role="search" aria-label="Pencarian situs" onsubmit="return false;">
+          <input id="search-input" type="search" placeholder="Cari informasi..." aria-label="Cari" class="px-3 py-2 rounded text-slate-900" />
+        </form>
+      </div>
+
+      <div id="menu-panel" class="hidden md:hidden pb-3">
+        <ul class="space-y-1">
+          <li><a class="block px-3 py-2 rounded hover:bg-white/15" href="../index.html">Beranda</a></li>
+          <li>
+            <button class="w-full text-left px-3 py-2 rounded hover:bg-white/15 flex items-center justify-between" data-submenu="profil-sub">
+              <span>Profil PPID</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul id="profil-sub" class="hidden bg-white text-slate-900 rounded-lg p-2 mt-1">
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/profil.html">Profil PPID</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/tugas-fungsi.html">Tugas &amp; Fungsi</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/visi-misi.html">Visi &amp; Misi</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/struktur.html">Struktur Organisasi</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/regulasi.html">Regulasi</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../profil/kontak.html">Kontak</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="w-full text-left px-3 py-2 rounded hover:bg-white/15 flex items-center justify-between" data-submenu="info-sub">
+              <span>Informasi Publik</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul id="info-sub" class="hidden bg-white text-slate-900 rounded-lg p-2 mt-1">
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/berkala.html">Informasi Berkala</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/serta-merta.html">Informasi Serta Merta</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/setiap-saat.html">Informasi Setiap Saat</a></li>
+              <li><a class="block px-3 py-2 rounded hover:bg-slate-100" href="../informasi/dikecualikan.html">Informasi Dikecualikan</a></li>
+            </ul>
+          </li>
+          <li><a class="block px-3 py-2 rounded hover:bg-white/15" href="../prosedur/index.html">Prosedur</a></li>
+          <li class="pt-2">
+            <input id="search-input-mobile" type="search" placeholder="Cari informasi..." aria-label="Cari" class="w-full px-3 py-2 rounded text-slate-900" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="max-w-6xl mx-auto px-4 py-8">
+    <h1 class="text-2xl font-semibold">Setiap Saat</h1>
+    <div class="mt-2 text-slate-700">
+      Informasi yang wajib tersedia setiap saat dan dapat diakses publik.
+    </div>
+  </main>
+
+  <footer class="bg-[#0b3b86] text-blue-50 mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-sm">
+      <p>© 2025 Distrik Navigasi Tipe A Kelas I Samarinda • We Guide You at Sea</p>
+      <address class="not-italic">Alamat kantor, Samarinda • Email: humas@disnavsamarinda.go.id • Tel: (000) 000‑000</address>
+    </div>
+  </footer>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/search.js"></script>
+</body>
+</html>
